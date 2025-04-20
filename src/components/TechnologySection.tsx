@@ -7,8 +7,8 @@ const TechnologySection = () => {
           Our Technology
         </h2>
         <div className="space-y-6 text-gray-600 text-center">
-          <p className="text-lg">[Your technology description line 1]</p>
-          <p className="text-lg">[Your technology description line 2]</p>
+          <p className="text-lg">Marking solutions that patients deserve</p>
+          <p className="text-lg">Visibility without long term traceability</p>
         </div>
       </div>
     </section>

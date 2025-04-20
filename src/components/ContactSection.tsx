@@ -17,7 +17,7 @@ const ContactSection = () => {
             <h3 className="text-2xl font-semibold mb-6">Get in Touch</h3>
             <form className="space-y-6">
               <div>
-                <Input type="text" placeholder="Your Name" />
+                <Input type="text" placeholder="Shai Haim" />
               </div>
               <div>
                 <Input type="email" placeholder="Your Email" />
@@ -33,17 +33,10 @@ const ContactSection = () => {
           
           <div className="space-y-8">
             <div className="flex items-start gap-4">
-              <Phone className="w-6 h-6 text-[#33C3F0]" />
-              <div>
-                <h4 className="text-xl font-semibold mb-2">Phone</h4>
-                <p className="text-gray-600">+1 (555) 000-0000</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
               <Mail className="w-6 h-6 text-[#33C3F0]" />
               <div>
                 <h4 className="text-xl font-semibold mb-2">Email</h4>
-                <p className="text-gray-600">contact@choicemedical.com</p>
+                <p className="text-gray-600">shai@choicemedical.health</p>
               </div>
             </div>
           </div>

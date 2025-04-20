@@ -3,23 +3,23 @@ import { Card } from "./ui/card";
 
 const teamMembers = [
   {
-    name: "Dr. Sarah Johnson",
-    role: "Chief Medical Officer",
+    name: "Dr. Ouri Rouche",
+    role: "Co founder & Chief Medical Officer",
     image: "/placeholder.svg"
   },
   {
-    name: "Michael Chen",
-    role: "Head of Research & Development",
+    name: "Shai Haim, MBA",
+    role: "Co founder & CEO",
     image: "/placeholder.svg"
   },
   {
-    name: "Emma Williams",
-    role: "Technical Director",
+    name: "Dr. Laurence Moine",
+    role: "Co founder & Chief Scientist Officer",
     image: "/placeholder.svg"
   },
   {
-    name: "David Rodriguez",
-    role: "Operations Manager",
+    name: "Prof. Lambros Tselikas",
+    role: "Co founder & advisor",
     image: "/placeholder.svg"
   }
 ];
