@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import TechnologySection from "@/components/TechnologySection";
 import TeamSection from "@/components/TeamSection";
 import ContactSection from "@/components/ContactSection";
+import SupportedBySection from "@/components/SupportedBySection";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <TechnologySection />
       <TeamSection />
       <ContactSection />
+      <SupportedBySection />
     </div>
   );
 };
