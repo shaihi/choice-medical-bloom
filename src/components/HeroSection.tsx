@@ -7,7 +7,7 @@ const HeroSection = () => {
           Choice Medical
         </h1>
         <p className="text-xl md:text-2xl text-gray-700 max-w-2xl mx-auto">
-          Patient centric - innovative marking solutions
+          Patient centric - Innovative marking solutions
         </p>
       </div>
     </section>
