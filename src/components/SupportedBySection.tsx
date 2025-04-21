@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Image } from 'lucide-react';
 
 const SupportedBySection = () => {
   return (
@@ -10,7 +9,13 @@ const SupportedBySection = () => {
           Ce projet a été financé par l'Etat dans le cadre de France 2030
         </p>
         <div className="w-8 h-8 bg-gray-200 flex items-center justify-center rounded">
-          <Image className="w-6 h-6 text-gray-500" />
+          <img
+            src="/france2030-logo.png"
+            alt="France 2030 logo"
+            className="w-8 h-8 object-contain"
+            width={32}
+            height={32}
+          />
         </div>
       </div>
     </section>
@@ -18,3 +23,4 @@ const SupportedBySection = () => {
 };
 
 export default SupportedBySection;
+
