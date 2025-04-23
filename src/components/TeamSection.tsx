@@ -5,12 +5,12 @@ const teamMembers = [
   {
     name: "Dr. Ouri Rouche",
     role: "Co founder & Chief Medical Officer",
-    image: "/placeholder.svg"
+    image: "/lovable-uploads/56f27ab2-b5d2-450b-9702-7abbd7b7a9cf.png"
   },
   {
     name: "Shai Haim, MBA",
     role: "Co founder & CEO",
-    image: "/placeholder.svg"
+    image: "/lovable-uploads/b0e2ffda-8a09-4248-be5c-9112cf7eccda.png"
   },
   {
     name: "Dr. Laurence Moine",
@@ -37,7 +37,7 @@ const TeamSection = () => {
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-32 h-32 rounded-full mx-auto mb-4 bg-[#FFDEE2]/20"
+                className="w-32 h-32 rounded-full mx-auto mb-4 bg-[#FFDEE2]/20 object-cover grayscale"
               />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h3>
               <p className="text-gray-600">{member.role}</p>
