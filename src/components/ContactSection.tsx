@@ -15,7 +15,7 @@ const ContactSection = () => {
               <Mail className="w-6 h-6 text-[#33C3F0]" />
               <div>
                 <p className="text-gray-600">
-                  <a href="mailto:contact@choicemedical.health">contact@choicemedical.health</a>
+                  <a href="mailto:contactus@choicemedical.health">contactus@choicemedical.health</a>
                 </p>
               </div>
             </div>
