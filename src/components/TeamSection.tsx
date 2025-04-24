@@ -15,7 +15,7 @@ const teamMembers = [
   {
     name: "Dr. Laurence Moine",
     role: "Co founder & Chief Scientist Officer",
-    image: "/placeholder.svg"
+    image: "/lovable-uploads/Laurence Moine_b_small.jpg"
   },
   {
     name: "Prof. Lambros Tselikas",
