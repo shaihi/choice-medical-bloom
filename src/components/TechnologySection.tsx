@@ -9,6 +9,7 @@ const TechnologySection = () => {
         <div className="space-y-6 text-gray-600 text-center">
           <p className="text-lg">Marking solutions that patients deserve</p>
           <p className="text-lg">Visibility without long term traceability</p>
+          <p className="text-lg">Patent pending developments from Paris Saclay University</p>
         </div>
       </div>
     </section>
