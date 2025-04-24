@@ -20,7 +20,7 @@ const teamMembers = [
   {
     name: "Prof. Lambros Tselikas",
     role: "Co founder & advisor",
-    image: "/placeholder.svg"
+    image: "/lovable-uploads/Lambros_tselikas_small.jpeg"
   }
 ];
 
