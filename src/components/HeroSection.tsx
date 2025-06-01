@@ -5,8 +5,8 @@ const HeroSection = () => {
       {/* Hero Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/lovable-uploads/hero-medical-guidance.webp"
-          alt="Advanced ultrasound-guided biopsy procedure showing precise needle placement"
+          src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&h=900&q=80"
+          alt="Professional woman in her 50s reviewing medical documentation in a modern healthcare setting"
           className="w-full h-full object-cover"
           loading="eager"
           width={1600}

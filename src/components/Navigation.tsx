@@ -35,13 +35,6 @@ const Navigation = () => {
             Benefits
           </a>
           <a 
-            href="#roadmap" 
-            onClick={(e) => handleNavClick(e, 'roadmap')} 
-            className="text-[#0A1C33]/70 hover:text-[#0A1C33] transition-colors"
-          >
-            Roadmap
-          </a>
-          <a 
             href="#team" 
             onClick={(e) => handleNavClick(e, 'team')} 
             className="text-[#0A1C33]/70 hover:text-[#0A1C33] transition-colors"
