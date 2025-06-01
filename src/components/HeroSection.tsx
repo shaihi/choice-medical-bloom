@@ -2,7 +2,7 @@ const HeroSection = () => {
   return <section id="home" className="min-h-screen flex items-center justify-center bg-white pt-16 relative">
       {/* Hero Background Image */}
       <div className="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&h=900&q=80" alt="Professional woman in her 50s reviewing medical documentation in a modern healthcare setting" className="w-full h-full object-cover" loading="eager" width={1600} height={900} />
+        <img src="/lovable-uploads/hero-medical-guidance.webp" alt="A woman in her 50s, she owns her fate and she is care free since Choice Medical's marker will not stay forever in her breast" className="w-full h-full object-cover" loading="eager" width={1600} height={900} />
         <div className="absolute inset-0 bg-[#0A1C33]/70"></div>
       </div>
       
