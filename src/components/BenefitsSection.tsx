@@ -12,8 +12,8 @@ const BenefitsSection = () => {
           <Card className="p-8 text-center bg-white border border-gray-200 rounded-sm shadow-lg">
             <div className="w-16 h-16 mx-auto mb-6">
               <img
-                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
-                alt="Medical precision targeting symbol representing accurate biopsy guidance"
+                src="/lovable-uploads/no_metal.png"
+                alt="No entrance to metal image depicting no metal inside"
                 className="w-full h-full object-cover rounded-full"
                 loading="lazy"
               />
@@ -25,8 +25,8 @@ const BenefitsSection = () => {
           <Card className="p-8 text-center bg-white border border-gray-200 rounded-sm shadow-lg">
             <div className="w-16 h-16 mx-auto mb-6">
               <img
-                src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
-                alt="Medical safety shield icon representing enhanced patient protection"
+                src="/lovable-uploads/patient_safety.png"
+                alt="Image of a woman with breast cancer ribbon depicting safety"
                 className="w-full h-full object-cover rounded-full"
                 loading="lazy"
               />
@@ -38,8 +38,8 @@ const BenefitsSection = () => {
           <Card className="p-8 text-center bg-white border border-gray-200 rounded-sm shadow-lg">
             <div className="w-16 h-16 mx-auto mb-6">
               <img
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
-                alt="Medical excellence badge representing superior clinical outcomes"
+                src="/lovable-uploads/degrade_right.png"
+                alt="Hand holding material depicting degradation"
                 className="w-full h-full object-cover rounded-full"
                 loading="lazy"
               />
