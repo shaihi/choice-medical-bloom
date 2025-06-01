@@ -10,7 +10,7 @@ const HeroSection = () => {
         <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
           No trace in the breast
         </h1>
-        <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+        <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
           the marker patients want and need
         </h2>
         <p className="text-xl max-w-2xl mx-auto mb-8 text-white md:text-2xl">Early-stage prototype — advancing toward trials</p>
