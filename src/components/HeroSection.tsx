@@ -11,7 +11,13 @@ const HeroSection = () => {
           No trace in the breast - the marker patients want and need
         </h1>
         <p className="text-xl max-w-2xl mx-auto mb-8 text-white md:text-2xl">Early-stage prototype — advancing toward trials</p>
-        <button id="cta-primary" className="bg-[#1CC5DC] hover:bg-[#1CC5DC]/90 text-[#0A1C33] font-semibold px-8 py-4 rounded-lg text-lg transition-colors">
+        <button
+          id="cta-primary"
+          onClick={() => {
+            window.location.href = "mailto:shai@choicemedical.health?subject=I'd%20like%20to%20hear%20more%20about%20Choice%20Medical";
+          }}
+          className="bg-[#1CC5DC] hover:bg-[#1CC5DC]/90 text-[#0A1C33] font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
+        >
           Request Investor Deck
         </button>
       </div>
