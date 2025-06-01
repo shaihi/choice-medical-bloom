@@ -26,20 +26,23 @@ const teamMembers = [
 
 const TeamSection = () => {
   return (
-    <section id="team" className="py-20 bg-[#D3E4FD]/20">
+    <section id="team" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+        <h2 className="text-4xl font-bold text-center mb-12 text-[#0A1C33]">
           Our Team
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member) => (
-            <Card key={member.name} className="p-6 text-center bg-white/80 backdrop-blur-sm hover:shadow-lg transition-shadow">
+            <Card key={member.name} className="p-6 text-center bg-white border border-gray-200 rounded-sm shadow-lg">
               <img
                 src={member.image}
-                alt={member.name}
-                className="w-32 h-32 rounded-full mx-auto mb-4 bg-[#FFDEE2]/20 object-cover grayscale"
+                alt={`${member.name}, ${member.role} at Choice Medical`}
+                className="w-32 h-32 rounded-full mx-auto mb-4 object-cover grayscale hover:grayscale-0 transition-all"
+                loading="lazy"
+                width={128}
+                height={128}
               />
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h3>
+              <h3 className="text-xl font-semibold text-[#0A1C33] mb-2">{member.name}</h3>
               <p className="text-gray-600">{member.role}</p>
             </Card>
           ))}
