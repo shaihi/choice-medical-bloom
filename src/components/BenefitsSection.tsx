@@ -18,8 +18,8 @@ const BenefitsSection = () => {
                 loading="lazy"
               />
             </div>
-            <h3 className="text-xl font-semibold text-[#0A1C33] mb-4">Precision Guidance</h3>
-            <p className="text-gray-600">Advanced marking technology ensures accurate biopsy targeting and improved patient outcomes.</p>
+            <h3 className="text-xl font-semibold text-[#0A1C33] mb-4">No metal</h3>
+            <p className="text-gray-600">Same marking capabilities without any metals inside</p>
           </Card>
           
           <Card className="p-8 text-center bg-white border border-gray-200 rounded-sm shadow-lg">
@@ -44,8 +44,8 @@ const BenefitsSection = () => {
                 loading="lazy"
               />
             </div>
-            <h3 className="text-xl font-semibold text-[#0A1C33] mb-4">Clinical Excellence</h3>
-            <p className="text-gray-600">Cutting-edge technology supporting healthcare professionals in delivering superior care.</p>
+            <h3 className="text-xl font-semibold text-[#0A1C33] mb-4">Degrades exaclty right</h3>
+            <p className="text-gray-600">Built to degrade for the amount of time necessary for clinical needs.</p>
           </Card>
         </div>
       </div>
