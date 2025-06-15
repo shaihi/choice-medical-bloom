@@ -32,7 +32,7 @@ const BenefitsSection = () => {
               />
             </div>
             <h3 className="text-xl font-semibold text-[#0A1C33] mb-4">Patient Safety</h3>
-            <p className="text-gray-600">Innovative solutions designed with patient-centric approach for enhanced safety protocols.</p>
+            <p className="text-gray-600">Innovative solutions designed with that reduce patient anxiety.</p>
           </Card>
           
           <Card className="p-8 text-center bg-white border border-gray-200 rounded-sm shadow-lg">
