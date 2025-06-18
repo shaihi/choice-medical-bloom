@@ -11,7 +11,7 @@ const HeroSection = () => {
           No trace in the breast
         </h1>
         <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
-          the marker patients want and need
+          The only marker that does not "mark patients for life"
         </h2>
         <p className="text-xl max-w-2xl mx-auto mb-8 text-white md:text-2xl">Early-stage prototype, progressing toward trials</p>
         <button
