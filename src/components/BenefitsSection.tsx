@@ -1,9 +1,8 @@
-
 import { Card } from "./ui/card";
 
 const BenefitsSection = () => {
   return (
-    <section id="benefits" className="py-24 bg-white">
+    <section id="benefits" className="py-24 bg-white" role="region" aria-label="Product Benefits">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-12 text-[#0A1C33]">
           Benefits

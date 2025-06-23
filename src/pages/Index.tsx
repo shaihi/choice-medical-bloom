@@ -10,13 +10,19 @@ import SupportedBySection from "@/components/SupportedBySection";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <Navigation />
-      <DisclaimerBanner />
-      <HeroSection />
-      <BenefitsSection />
-      <TeamSection />
-      <ContactSection />
-      <SupportedBySection />
+      <header>
+        <Navigation />
+        <DisclaimerBanner />
+      </header>
+      <main>
+        <HeroSection />
+        <BenefitsSection />
+        <TeamSection />
+        <ContactSection />
+      </main>
+      <footer>
+        <SupportedBySection />
+      </footer>
     </div>
   );
 };

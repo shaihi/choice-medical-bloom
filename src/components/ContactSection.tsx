@@ -1,10 +1,9 @@
-
 import { Card } from "./ui/card";
 import { Mail } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-24 bg-gray-50">
+    <section id="contact" className="py-24 bg-gray-50" role="region" aria-label="Contact Information">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-12 text-[#0A1C33]">
           Contact Us
