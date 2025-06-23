@@ -20,7 +20,7 @@ const SupportedBySection = () => {
             />
           </div>
         </div>
-        <p className="text-[0.5rem] text-gray-500 text-center mt-4 opacity-70 max-w-4xl">
+        <p className="text-xs text-gray-700 text-center mt-4 max-w-4xl">
           The products and solutions described on this website are currently under development and have not been cleared or approved by the U.S. Food and Drug Administration (FDA). They are not available for sale or distribution. The information provided is for informational purposes only and is not intended as a substitute for professional medical advice, diagnosis, or treatment.
         </p>
       </div>
