@@ -6,7 +6,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src="/lovable-uploads/hero-medical-guidance.webp" 
-          alt="A woman in her 50s, she owns her fate and she is care free since Choice Medical's marker will not stay forever in her breast" 
+          alt="Professional medical setting showing Choice Medical's innovative approach to breast biopsy marking" 
           className="w-full h-full object-cover" 
           loading="eager" 
           width={1600} 
@@ -28,7 +28,8 @@ const HeroSection = () => {
           onClick={() => {
             window.location.href = "mailto:shai@choicemedical.health?subject=I'd%20like%20to%20hear%20more%20about%20Choice%20Medical";
           }}
-          className="bg-[#1CC5DC] hover:bg-[#1CC5DC]/90 text-[#0A1C33] font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
+          className="bg-[#1CC5DC] hover:bg-[#1CC5DC]/90 text-[#0A1C33] font-semibold px-8 py-4 rounded-lg text-lg transition-colors focus:ring-2 focus:ring-[#1CC5DC] focus:ring-offset-2"
+          aria-label="Request investor deck via email"
         >
           Request Investor Deck
         </button>
