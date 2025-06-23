@@ -1,4 +1,3 @@
-
 import { Card } from "./ui/card";
 
 const teamMembers = [
@@ -26,7 +25,7 @@ const teamMembers = [
 
 const TeamSection = () => {
   return (
-    <section id="team" className="py-24 bg-white">
+    <section id="team" className="py-24 bg-white" role="region" aria-label="Our Team">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-12 text-[#0A1C33]">
           Our Team
