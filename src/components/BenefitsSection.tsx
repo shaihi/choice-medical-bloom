@@ -1,3 +1,4 @@
+
 import { Card } from "./ui/card";
 
 const BenefitsSection = () => {
@@ -43,7 +44,7 @@ const BenefitsSection = () => {
                 loading="lazy"
               />
             </div>
-            <h3 className="text-xl font-semibold text-[#0A1C33] mb-4">Degrades exaclty right</h3>
+            <h3 className="text-xl font-semibold text-[#0A1C33] mb-4">Degrades exactly right</h3>
             <p className="text-gray-600">Built to degrade for the amount of time necessary for clinical needs.</p>
           </Card>
         </div>

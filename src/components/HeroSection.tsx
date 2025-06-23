@@ -1,8 +1,17 @@
+
 const HeroSection = () => {
-  return <section id="home" className="min-h-screen flex items-center justify-center bg-white pt-16 relative">
+  return (
+    <section id="home" className="min-h-screen flex items-center justify-center bg-white pt-16 relative">
       {/* Hero Background Image */}
       <div className="absolute inset-0 z-0">
-        <img src="/lovable-uploads/hero-medical-guidance.webp" alt="A woman in her 50s, she owns her fate and she is care free since Choice Medical's marker will not stay forever in her breast" className="w-full h-full object-cover" loading="eager" width={1600} height={900} />
+        <img 
+          src="/lovable-uploads/hero-medical-guidance.webp" 
+          alt="A woman in her 50s, she owns her fate and she is care free since Choice Medical's marker will not stay forever in her breast" 
+          className="w-full h-full object-cover" 
+          loading="eager" 
+          width={1600} 
+          height={900} 
+        />
         <div className="absolute inset-0 bg-[#0A1C33]/70"></div>
       </div>
       
@@ -10,9 +19,9 @@ const HeroSection = () => {
         <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
           No trace in the breast
         </h1>
-        <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
+        <p className="text-3xl md:text-4xl font-semibold text-white mb-6">
           The only marker that does not "mark patients for life"
-        </h2>
+        </p>
         <p className="text-xl max-w-2xl mx-auto mb-8 text-white md:text-2xl">Early-stage prototype, progressing toward trials</p>
         <button
           id="cta-primary"
@@ -24,6 +33,8 @@ const HeroSection = () => {
           Request Investor Deck
         </button>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default HeroSection;
