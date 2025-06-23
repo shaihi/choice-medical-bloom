@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import DisclaimerBanner from "@/components/DisclaimerBanner";
@@ -6,6 +5,7 @@ import BenefitsSection from "@/components/BenefitsSection";
 import TeamSection from "@/components/TeamSection";
 import ContactSection from "@/components/ContactSection";
 import SupportedBySection from "@/components/SupportedBySection";
+import AccessibilityButton from "@/components/AccessibilityButton";
 
 const Index = () => {
   return (
@@ -31,6 +31,8 @@ const Index = () => {
       <footer>
         <SupportedBySection />
       </footer>
+      
+      <AccessibilityButton />
     </div>
   );
 };

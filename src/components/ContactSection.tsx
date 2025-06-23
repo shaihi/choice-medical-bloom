@@ -12,10 +12,14 @@ const ContactSection = () => {
         <div className="grid md:grid-cols-1 gap-12 justify-center">
           <div className="space-y-8 max-w-md mx-auto">
             <div className="flex items-center gap-4">
-              <Mail className="w-6 h-6 text-[#1CC5DC]" />
+              <Mail className="w-6 h-6 text-[#1CC5DC]" aria-hidden="true" />
               <div>
                 <p className="text-gray-600">
-                  <a href="mailto:contactus@choicemedical.health" className="hover:text-[#1CC5DC] transition-colors">
+                  <a 
+                    href="mailto:contactus@choicemedical.health" 
+                    className="hover:text-[#1CC5DC] transition-colors focus:text-[#1CC5DC]"
+                    aria-label="Send email to Choice Medical"
+                  >
                     contactus@choicemedical.health
                   </a>
                 </p>

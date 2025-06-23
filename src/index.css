@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -88,6 +89,40 @@
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
+  /* High contrast mode */
+  .high-contrast {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 90%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 10%;
+    --accent: 0 0% 90%;
+    --accent-foreground: 0 0% 0%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+  }
+
+  .high-contrast button {
+    border: 2px solid black !important;
+  }
+
+  .high-contrast img {
+    filter: contrast(1.2) !important;
+  }
+
+  /* Reduced motion */
+  .reduce-motion *,
+  .reduce-motion *::before,
+  .reduce-motion *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 @layer base {
@@ -97,5 +132,28 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Enhanced focus styles */
+  *:focus-visible {
+    outline: 2px solid #1CC5DC;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* Ensure buttons and interactive elements have proper focus */
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 2px solid #1CC5DC;
+    outline-offset: 2px;
+  }
+
+  /* High contrast focus for better visibility */
+  .high-contrast *:focus-visible {
+    outline: 3px solid black;
+    outline-offset: 2px;
   }
 }
