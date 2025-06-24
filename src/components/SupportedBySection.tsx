@@ -3,7 +3,7 @@ import React from 'react';
 
 const SupportedBySection = () => {
   return (
-    <section className="bg-white py-6">
+    <section className="bg-white py-6 pb-40">
       <div className="max-w-7xl mx-auto px-6 flex flex-col items-center justify-center space-y-4">
         <div className="flex items-center space-x-4">
           <p className="text-sm text-gray-700 text-center">
