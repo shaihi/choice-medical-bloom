@@ -1,7 +1,6 @@
-
 const HeroSection = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-white pt-16 relative">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-white pt-20 relative">
       {/* Hero Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
