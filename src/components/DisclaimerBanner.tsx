@@ -3,7 +3,7 @@ const DisclaimerBanner = () => {
   return (
     <div
       id="disclaimer"
-      className="sticky top-0 z-40 px-6 text-center text-sm font-medium shadow-md bg-orange-400"
+      className="relative z-30 px-6 py-2 text-center text-sm font-medium shadow-md bg-orange-400"
     >
       <aside
         role="note"
