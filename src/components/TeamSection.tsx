@@ -1,3 +1,4 @@
+
 import { Card } from "./ui/card";
 
 const teamMembers = [
@@ -36,8 +37,13 @@ const TeamSection = () => {
           Our Team
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {teamMembers.map((member) => (
-            <Card key={member.name} className="p-6 text-center bg-white border border-gray-200 rounded-sm shadow-lg">
+          {teamMembers.map((member, index) => (
+            <Card 
+              key={member.name} 
+              className={`p-6 text-center bg-white border border-gray-200 rounded-sm shadow-lg ${
+                index === 4 ? 'lg:col-start-2' : ''
+              }`}
+            >
               <img
                 src={member.image}
                 alt={`${member.name}, ${member.role} at Choice Medical`}
