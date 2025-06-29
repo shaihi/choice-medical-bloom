@@ -1,4 +1,3 @@
-
 import { Card } from "./ui/card";
 
 const teamMembers = [
@@ -21,6 +20,11 @@ const teamMembers = [
     name: "Prof. Lambros Tselikas",
     role: "Co founder & advisor",
     image: "/lovable-uploads/Lambros_tselikas_small.jpeg"
+  },
+  {
+    name: "Remi Marces",
+    role: "PhD Candidate",
+    image: "/lovable-uploads/bc0d1e30-b1dd-4aa4-b547-1f9fd83e33e2.png"
   }
 ];
 
