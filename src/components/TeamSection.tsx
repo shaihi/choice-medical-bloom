@@ -1,3 +1,4 @@
+
 import { Card } from "./ui/card";
 
 const teamMembers = [
@@ -12,6 +13,11 @@ const teamMembers = [
     image: "/lovable-uploads/b0e2ffda-8a09-4248-be5c-9112cf7eccda.png"
   },
   {
+    name: "Remi Marces",
+    role: "PhD Candidate",
+    image: "/lovable-uploads/bc0d1e30-b1dd-4aa4-b547-1f9fd83e33e2.png"
+  },
+  {
     name: "Dr. Laurence Moine",
     role: "Co founder & Chief Scientist Officer",
     image: "/lovable-uploads/Laurence Moine_b_small.jpg"
@@ -20,11 +26,6 @@ const teamMembers = [
     name: "Prof. Lambros Tselikas",
     role: "Co founder & advisor",
     image: "/lovable-uploads/Lambros_tselikas_small.jpeg"
-  },
-  {
-    name: "Remi Marces",
-    role: "PhD Candidate",
-    image: "/lovable-uploads/bc0d1e30-b1dd-4aa4-b547-1f9fd83e33e2.png"
   }
 ];
 
@@ -35,9 +36,9 @@ const TeamSection = () => {
         <h2 className="text-4xl font-bold text-center mb-12 text-[#0A1C33]">
           Our Team
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 justify-items-center">
           {teamMembers.map((member) => (
-            <Card key={member.name} className="p-6 text-center bg-white border border-gray-200 rounded-sm shadow-lg">
+            <Card key={member.name} className="p-6 text-center bg-white border border-gray-200 rounded-sm shadow-lg w-full max-w-xs">
               <img
                 src={member.image}
                 alt={`${member.name}, ${member.role} at Choice Medical`}
