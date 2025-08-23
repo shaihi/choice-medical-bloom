@@ -31,7 +31,7 @@ const teamMembers = [
 
 const advisors = [
   {
-    name: "Alexander Preker S",
+    name: "Alexander Preker, MD, PhD",
     role: "Advisor",
     image: "/lovable-uploads/bef6d498-ab09-4994-8842-e6e9de726b91.png",
     profileUrl: "https://www.publichealth.columbia.edu/profile/alexander-preker-md"
