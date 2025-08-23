@@ -35,6 +35,12 @@ const advisors = [
     role: "Advisor",
     image: "/lovable-uploads/bef6d498-ab09-4994-8842-e6e9de726b91.png",
     profileUrl: "https://www.publichealth.columbia.edu/profile/alexander-preker-md"
+  },
+  {
+    name: "Dr. Julia Arfi Rouche",
+    role: "Advisor",
+    image: "/lovable-uploads/julia_arfi_small.jpeg",
+    profileUrl: "https://www.linkedin.com/in/julia-arfi-rouche-31908219b/"
   }
 ];
 
