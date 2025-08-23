@@ -84,7 +84,7 @@ const TeamSection = () => {
             {advisors.map((advisor) => (
               <Card
                 key={advisor.name}
-                className="p-6 text-center bg-white border border-gray-200 rounded-sm shadow-lg"
+                className="w-full max-w-[20rem] p-6 text-center bg-white border border-gray-200 rounded-sm shadow-lg"
               >
                 <a
                   href={advisor.profileUrl}
