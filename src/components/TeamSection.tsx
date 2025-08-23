@@ -29,6 +29,15 @@ const teamMembers = [
   }
 ];
 
+const advisors = [
+  {
+    name: "Alexander Preker S",
+    role: "Advisor",
+    image: "/lovable-uploads/bef6d498-ab09-4994-8842-e6e9de726b91.png",
+    profileUrl: "https://www.publichealth.columbia.edu/profile/alexander-preker-md"
+  }
+];
+
 const TeamSection = () => {
   return (
     <section id="team" className="py-24 bg-white" role="region" aria-label="Our Team">
@@ -56,6 +65,38 @@ const TeamSection = () => {
               <p className="text-gray-600">{member.role}</p>
             </Card>
           ))}
+        </div>
+        
+        {/* Advisors Section */}
+        <div className="mt-16">
+          <h3 className="text-3xl font-bold text-center mb-12 text-[#0A1C33]">
+            Our Advisors
+          </h3>
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {advisors.map((advisor) => (
+                <Card key={advisor.name} className="p-6 text-center bg-white border border-gray-200 rounded-sm shadow-lg">
+                  <a 
+                    href={advisor.profileUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block hover:opacity-80 transition-opacity"
+                  >
+                    <img
+                      src={advisor.image}
+                      alt={`${advisor.name}, ${advisor.role} at Choice Medical`}
+                      className="w-32 h-32 rounded-full mx-auto mb-4 object-cover grayscale hover:grayscale-0 transition-all"
+                      loading="lazy"
+                      width={128}
+                      height={128}
+                    />
+                    <h3 className="text-xl font-semibold text-[#0A1C33] mb-2">{advisor.name}</h3>
+                    <p className="text-gray-600">{advisor.role}</p>
+                  </a>
+                </Card>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
