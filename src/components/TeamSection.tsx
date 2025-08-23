@@ -83,8 +83,8 @@ const TeamSection = () => {
           <div
             className="
               grid gap-8 justify-items-center
-              grid-cols-1 sm:grid-cols-2
               [grid-template-columns:repeat(auto-fit,minmax(260px,1fr))]
+              auto-rows-fr
             "
           >
             {advisors.map((advisor) => (
