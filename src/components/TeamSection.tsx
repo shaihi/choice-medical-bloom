@@ -67,7 +67,7 @@ const TeamSection = () => {
                 width={128}
                 height={128}
               />
-              <h3 className="text-xl font-semibold text-[#0A1C33] mb-2">{member.name}</h3>
+              <h3 className="text-xl font-semibold text-[#0A1C33] mb-2 whitespace-normal break-words">{member.name}</h3>
               <p className="text-gray-600">{member.role}</p>
             </Card>
           ))}
@@ -100,7 +100,7 @@ const TeamSection = () => {
                     width={128}
                     height={128}
                   />
-                  <h3 className="text-xl font-semibold text-[#0A1C33] mb-2">
+                  <h3 className="text-xl font-semibold text-[#0A1C33] mb-2 whitespace-normal break-words">
                     {advisor.name}
                   </h3>
                   <p className="text-gray-600">{advisor.role}</p>
