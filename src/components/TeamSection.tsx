@@ -80,13 +80,7 @@ const TeamSection = () => {
           </h3>
 
           {/* Auto-centering, responsive grid: fits any number of advisors */}
-          <div
-            className="
-              grid gap-8 justify-items-center
-              [grid-template-columns:repeat(auto-fit,minmax(260px,1fr))]
-              auto-rows-fr
-            "
-          >
+          <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-stretch">
             {advisors.map((advisor) => (
               <Card
                 key={advisor.name}
