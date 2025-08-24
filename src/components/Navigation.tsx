@@ -29,6 +29,7 @@ const Navigation = () => {
           <a href="#benefits" onClick={(e) => handleNavClick(e, 'benefits')} className="text-[#0A1C33]/70 hover:text-[#0A1C33] transition-colors">Benefits</a>
           <a href="#team" onClick={(e) => handleNavClick(e, 'team')} className="text-[#0A1C33]/70 hover:text-[#0A1C33] transition-colors">Team</a>
           <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')} className="text-[#0A1C33]/70 hover:text-[#0A1C33] transition-colors">Contact</a>
+          <a href="/privacy" className="text-[#0A1C33]/70 hover:text-[#0A1C33] transition-colors">Privacy</a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -48,6 +49,7 @@ const Navigation = () => {
           <a href="#benefits" onClick={(e) => handleNavClick(e, 'benefits')} className="block text-[#0A1C33]/70 hover:text-[#0A1C33]">Benefits</a>
           <a href="#team" onClick={(e) => handleNavClick(e, 'team')} className="block text-[#0A1C33]/70 hover:text-[#0A1C33]">Team</a>
           <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')} className="block text-[#0A1C33]/70 hover:text-[#0A1C33]">Contact</a>
+          <a href="/privacy" className="block text-[#0A1C33]/70 hover:text-[#0A1C33]">Privacy</a>
         </div>
       )}
     </nav>

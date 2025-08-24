@@ -1,14 +1,9 @@
 import Navigation from "@/components/Navigation";
-import HeroSection from "@/components/HeroSection";
-import DisclaimerBanner from "@/components/DisclaimerBanner";
-import BenefitsSection from "@/components/BenefitsSection";
-import TeamSection from "@/components/TeamSection";
-import ContactSection from "@/components/ContactSection";
+import PrivacyPolicy from "@/components/PrivacyPolicy";
 import SupportedBySection from "@/components/SupportedBySection";
 import AccessibilityButton from "@/components/AccessibilityButton";
-import CookieConsent from "@/components/CookieConsent";
 
-const Index = () => {
+const PrivacyPage = () => {
   return (
     <div className="min-h-screen">
       {/* Skip to main content link - visible only on focus */}
@@ -21,22 +16,17 @@ const Index = () => {
       
       <header>
         <Navigation />
-        <DisclaimerBanner />
       </header>
       <main id="main-content">
-        <HeroSection />
-        <BenefitsSection />
-        <TeamSection />
-        <ContactSection />
+        <PrivacyPolicy />
       </main>
       <footer>
         <SupportedBySection />
       </footer>
       
       <AccessibilityButton />
-      <CookieConsent />
     </div>
   );
 };
 
-export default Index;
+export default PrivacyPage;
