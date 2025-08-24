@@ -112,7 +112,7 @@ const PrivacyPolicy = () => {
             <h2 className="text-2xl font-semibold mb-4 text-[#0A1C33]">Changes to This Policy</h2>
             <p>
               We may update this privacy policy from time to time. The current version will always be 
-              available on this page with the effective date noted below.
+              available on this page with the effective date noted below. 
             </p>
           </div>
 
