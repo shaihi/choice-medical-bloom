@@ -15,11 +15,19 @@ const CookieConsent = () => {
   const acceptCookies = () => {
     localStorage.setItem('cookie-consent', 'accepted');
     setShowBanner(false);
+    // Reload page to load third-party scripts after consent
+    window.location.reload();
   };
 
   const rejectCookies = () => {
     localStorage.setItem('cookie-consent', 'rejected');
     setShowBanner(false);
+    
+    // Remove any third-party scripts if they were loaded
+    const gptengineerScript = document.querySelector('script[src*="gptengineer.js"]');
+    if (gptengineerScript) {
+      gptengineerScript.remove();
+    }
   };
 
   if (!showBanner) return null;

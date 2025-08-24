@@ -8,6 +8,14 @@
     <meta name="description" content="Innovative ultrasound-guided biopsy marking solutions for enhanced patient safety and clinical precision. Prototype bench-tested, first-in-human Q4 2026." />
     <meta name="keywords" content="medical devices, biopsy guidance, ultrasound, patient safety, interventional radiology, investigational device" />
     <meta name="author" content="Choice Medical" />
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+    
+    <!-- Open Graph -->
     <meta property="og:title" content="Choice Medical - Guiding Biopsies, Protecting Patients" />
     <meta property="og:description" content="Innovative ultrasound-guided biopsy marking solutions for enhanced patient safety and clinical precision." />
     <meta property="og:type" content="website" />
@@ -95,7 +103,16 @@
   <body>
     <div id="root"></div>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script>
+      // Only load third-party scripts if user has consented
+      const consent = localStorage.getItem('cookie-consent');
+      if (consent === 'accepted') {
+        const script = document.createElement('script');
+        script.src = 'https://cdn.gpteng.co/gptengineer.js';
+        script.type = 'module';
+        document.head.appendChild(script);
+      }
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
