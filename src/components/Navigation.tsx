@@ -1,13 +1,24 @@
 import React, { useState } from 'react';
 import { Button } from "./ui/button";
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const handleNavClick = (e: React.MouseEvent, targetId: string) => {
     e.preventDefault();
-    const targetElement = document.getElementById(targetId);
+    
+    // If we're not on the home page, navigate to home with hash
+    if (location.pathname !== '/') {
+      navigate(`/#${targetId}`);
+      setIsOpen(false);
+      return;
+    }
 
+    // If we're on the home page, scroll to the element
+    const targetElement = document.getElementById(targetId);
     if (targetElement) {
       targetElement.scrollIntoView({
         behavior: 'smooth',
