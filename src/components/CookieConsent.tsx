@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
+import { initGA } from "@/lib/analytics";
 
 const CookieConsent = () => {
   const [showBanner, setShowBanner] = useState(false);
@@ -15,8 +16,7 @@ const CookieConsent = () => {
   const acceptCookies = () => {
     localStorage.setItem('cookie-consent', 'accepted');
     setShowBanner(false);
-    // Reload page to load third-party scripts after consent
-    window.location.reload();
+    initGA();
   };
 
   const rejectCookies = () => {
@@ -38,14 +38,14 @@ const CookieConsent = () => {
         <div className="space-y-3">
           <h3 className="font-semibold text-[#0A1C33]">Cookie Consent</h3>
           <p className="text-sm text-gray-600">
-            We use essential cookies to ensure our website functions properly. We do not use tracking cookies or analytics that collect personal data.
+            We use essential cookies to ensure our website functions properly, and analytics cookies (Google Analytics) to understand how visitors use our site.
           </p>
           <div className="flex gap-2 flex-col sm:flex-row">
             <Button 
               onClick={acceptCookies}
               className="flex-1 bg-[#1CC5DC] hover:bg-[#1CC5DC]/90 text-white"
             >
-              Accept Essential
+              Accept All
             </Button>
             <Button 
               onClick={rejectCookies}

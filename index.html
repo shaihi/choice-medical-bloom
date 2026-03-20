@@ -128,6 +128,17 @@
         script.src = 'https://cdn.gpteng.co/gptengineer.js';
         script.type = 'module';
         document.head.appendChild(script);
+
+        // Google Tag Manager (noscript fallback)
+        const noscript = document.createElement('noscript');
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://www.googletagmanager.com/ns.html?id=GTM-TWTHBKZJ';
+        iframe.height = '0';
+        iframe.width = '0';
+        iframe.style.display = 'none';
+        iframe.style.visibility = 'hidden';
+        noscript.appendChild(iframe);
+        document.body.insertBefore(noscript, document.body.firstChild);
       }
     </script>
     <script type="module" src="/src/main.tsx"></script>
