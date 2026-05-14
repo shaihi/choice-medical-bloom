@@ -1,4 +1,6 @@
-import { useInView } from "@/hooks/use-in-view";
+import React from "react";
+import { useInView, useIsVisible } from "@/hooks/use-in-view";
+import DissolveAnimation from "./DissolveAnimation";
 
 const credentials = [
   "Patent Filed",
@@ -9,9 +11,11 @@ const credentials = [
 const ScienceSection = () => {
   const { ref: headRef, inView: headInView } = useInView();
   const { ref: credRef, inView: credInView } = useInView();
+  const { ref: sectionRef, visible } = useIsVisible();
 
   return (
     <section
+      ref={sectionRef as React.RefObject<HTMLElement>}
       id="science"
       className="min-h-screen flex flex-col justify-center bg-[#0A1C33] py-24 relative overflow-hidden"
       role="region"
@@ -21,6 +25,11 @@ const ScienceSection = () => {
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-[#1CC5DC]/5 blur-3xl pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-6 w-full">
+        {/* Animation — centred above the text, plays on loop */}
+        <div className="flex justify-start mb-6">
+          <DissolveAnimation playing={visible} />
+        </div>
+
         <div
           ref={headRef}
           className={`transition-all duration-1000 ${

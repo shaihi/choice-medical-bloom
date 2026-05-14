@@ -130,6 +130,51 @@
   }
 }
 
+/* ─── Dissolve marker animation ─────────────────────────────────────────── */
+
+/* Core glowing dot: appear → glow → pulse → dissolve → gone */
+@keyframes marker-core {
+  0%   { opacity: 0; transform: scale(0.15); box-shadow: none; }
+  7%   { opacity: 1; transform: scale(1);
+         box-shadow: 0 0 14px 5px rgba(28,197,220,0.55), 0 0 30px 12px rgba(28,197,220,0.18); }
+  21%  { transform: scale(1.4);
+         box-shadow: 0 0 22px 9px rgba(28,197,220,0.4), 0 0 50px 20px rgba(28,197,220,0.08); }
+  30%  { opacity: 0.9; transform: scale(1);
+         box-shadow: 0 0 12px 4px rgba(28,197,220,0.4); }
+  46%  { opacity: 0; transform: scale(0.2); box-shadow: none; }
+  100% { opacity: 0; transform: scale(0.2); }
+}
+
+/* Ripple ring expanding from the pulse */
+@keyframes marker-ripple {
+  0%, 8%  { opacity: 0; transform: scale(0.9); }
+  21%     { opacity: 0.45; transform: scale(1); }
+  40%     { opacity: 0; transform: scale(4.5); }
+  100%    { opacity: 0; transform: scale(4.5); }
+}
+
+/* Particles: emerge from centre → fly outward → fade */
+@keyframes marker-particle {
+  0%, 26%  { opacity: 0;
+              transform: translateX(0px) translateY(0px) scale(0); }
+  33%      { opacity: 0.9;
+              transform: translateX(calc(var(--tx) * 0.12)) translateY(calc(var(--ty) * 0.12)) scale(1); }
+  54%      { opacity: 0;
+              transform: translateX(var(--tx)) translateY(var(--ty)) scale(0.15); }
+  100%     { opacity: 0;
+              transform: translateX(var(--tx)) translateY(var(--ty)) scale(0.15); }
+}
+
+/* "no trace" label: materialises in the empty pause then fades */
+@keyframes marker-label {
+  0%, 46%  { opacity: 0; letter-spacing: 0.25em; }
+  58%      { opacity: 1;  letter-spacing: 0.42em; }
+  74%      { opacity: 1;  letter-spacing: 0.42em; }
+  90%, 100% { opacity: 0; letter-spacing: 0.55em; }
+}
+
+/* ──────────────────────────────────────────────────────────────────────── */
+
 @layer base {
   * {
     @apply border-border;
