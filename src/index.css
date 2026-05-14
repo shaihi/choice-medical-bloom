@@ -153,17 +153,8 @@
   100%    { opacity: 0; transform: scale(4.5); }
 }
 
-/* Particles: emerge from centre → fly outward → fade */
-@keyframes marker-particle {
-  0%, 26%  { opacity: 0;
-              transform: translateX(0px) translateY(0px) scale(0); }
-  33%      { opacity: 0.9;
-              transform: translateX(calc(var(--tx) * 0.12)) translateY(calc(var(--ty) * 0.12)) scale(1); }
-  54%      { opacity: 0;
-              transform: translateX(var(--tx)) translateY(var(--ty)) scale(0.15); }
-  100%     { opacity: 0;
-              transform: translateX(var(--tx)) translateY(var(--ty)) scale(0.15); }
-}
+/* Per-particle keyframes (mp0–mp15) are generated inline by DissolveAnimation.tsx
+   to avoid iOS Safari limitations with CSS custom properties in @keyframes. */
 
 /* "no trace" label: materialises in the empty pause then fades */
 @keyframes marker-label {
