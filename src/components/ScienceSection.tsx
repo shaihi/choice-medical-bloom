@@ -52,17 +52,17 @@ const ScienceSection = () => {
         {/* Credentials strip */}
         <div
           ref={credRef}
-          className={`flex flex-wrap gap-6 transition-all duration-700 delay-300 ${
+          className={`flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-0 transition-all duration-700 delay-300 ${
             credInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
           {credentials.map((cred, idx) => (
-            <div key={cred} className="flex items-center gap-6">
-              {idx > 0 && <span className="w-px h-5 bg-white/20" aria-hidden="true" />}
-              <div className="flex items-center gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#1CC5DC]" aria-hidden="true" />
-                <span className="text-white/70 text-sm font-medium">{cred}</span>
-              </div>
+            <div key={cred} className="flex items-center gap-3">
+              {idx > 0 && (
+                <span className="hidden sm:block w-px h-5 bg-white/20 mx-6" aria-hidden="true" />
+              )}
+              <div className="w-1.5 h-1.5 rounded-full bg-[#1CC5DC] flex-shrink-0" aria-hidden="true" />
+              <span className="text-white/70 text-sm font-medium">{cred}</span>
             </div>
           ))}
         </div>
