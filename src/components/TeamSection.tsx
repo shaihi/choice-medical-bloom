@@ -54,7 +54,7 @@ const advisors = [
     role: "Advisor",
     image: "/uploads/julia_arfi_small.jpeg",
     linkedin: "https://www.linkedin.com/in/julia-arfi-rouche-31908219b/",
-    bio: "Radiologist specializing in breast imaging and interventional procedures.",
+    bio: "Senior breast radiologist at Gustave Roussy and private practice. SIFEM board member. Breast cancer screening advocate in France.",
   },
 ];
 
