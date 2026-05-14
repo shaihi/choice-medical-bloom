@@ -9,13 +9,13 @@ const LinkedInIcon = () => (
 const teamMembers = [
   {
     name: "Dr. Ouri Rouche",
-    role: "Co-founder & Chief Medical Officer",
+    role: "Co-founder & CEO",
     image: "/uploads/56f27ab2-b5d2-450b-9702-7abbd7b7a9cf.png",
     linkedin: "https://www.linkedin.com/in/ouri-rouche-146671a4/",
   },
   {
     name: "Shai Haim, MBA",
-    role: "Co-founder & CEO",
+    role: "Co-founder & COO",
     image: "/uploads/b0e2ffda-8a09-4248-be5c-9112cf7eccda.png",
     linkedin: "https://linkedin.com/in/shaihi",
   },
