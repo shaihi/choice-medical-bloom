@@ -42,7 +42,7 @@ const HeroSection = () => {
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.05] mb-10">
           3 million women a year
           <br />
-          <span className="text-[#1CC5DC]">are permanently marked.</span>
+          <span className="text-[#1CC5DC]">are marked for life.</span>
           <br />
           Most don't need to be.
         </h1>
