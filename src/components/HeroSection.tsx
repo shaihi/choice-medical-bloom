@@ -17,7 +17,7 @@ const HeroSection = () => {
       {/* Subtle background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/lovable-uploads/hero-medical-guidance.webp"
+          src="/uploads/hero-medical-guidance.webp"
           alt=""
           aria-hidden="true"
           className="w-full h-full object-cover opacity-10"

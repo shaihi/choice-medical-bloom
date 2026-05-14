@@ -2,7 +2,7 @@ import { useInView } from "@/hooks/use-in-view";
 
 const benefits = [
   {
-    image: "/lovable-uploads/no_metal.png",
+    image: "/uploads/no_metal.png",
     alt: "No entrance to metal image depicting no metal inside",
     title: "No Metal",
     description: "Same marking capabilities without any metals inside",
@@ -10,7 +10,7 @@ const benefits = [
     choiceMedical: "Fully metal-free composition",
   },
   {
-    image: "/lovable-uploads/patient_safety.png",
+    image: "/uploads/patient_safety.png",
     alt: "Image of a woman with breast cancer ribbon depicting safety",
     title: "Patient Comfort",
     description: "Innovative solutions designed to reduce patient anxiety",
@@ -18,7 +18,7 @@ const benefits = [
     choiceMedical: "No trace after clinical need ends",
   },
   {
-    image: "/lovable-uploads/degrade_right.png",
+    image: "/uploads/degrade_right.png",
     alt: "Hand holding material depicting degradation",
     title: "Controlled Degradation",
     description: "Built to degrade for the amount of time necessary for clinical needs",
