@@ -1,7 +1,9 @@
 import { useInView } from "@/hooks/use-in-view";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const MarketSection = () => {
   const { ref, inView } = useInView();
+  const { t } = useLanguage();
 
   return (
     <section
@@ -11,7 +13,7 @@ const MarketSection = () => {
       aria-label="Market Scale"
     >
       <div className="max-w-6xl mx-auto px-6 w-full">
-        <p className="text-gray-300 text-xs uppercase tracking-[0.2em] mb-16">The scale of the problem</p>
+        <p className="text-gray-300 text-xs uppercase tracking-[0.2em] mb-16">{t.market.eyebrow}</p>
 
         <div
           ref={ref}
@@ -28,8 +30,8 @@ const MarketSection = () => {
               >
                 1.7<span className="text-[#1CC5DC]">M</span>
               </p>
-              <p className="text-lg text-gray-400 font-medium">breast biopsy procedures per year</p>
-              <p className="text-sm text-gray-300 mt-1">United States</p>
+              <p className="text-lg text-gray-400 font-medium">{t.market.proceduresLabel}</p>
+              <p className="text-sm text-gray-300 mt-1">{t.market.us}</p>
             </div>
 
             <div className="py-12 md:pl-16 border-t md:border-t-0 border-gray-100">
@@ -39,18 +41,18 @@ const MarketSection = () => {
               >
                 1.3<span className="text-[#1CC5DC]">M</span>
               </p>
-              <p className="text-lg text-gray-400 font-medium">breast biopsy procedures per year</p>
-              <p className="text-sm text-gray-300 mt-1">Europe</p>
+              <p className="text-lg text-gray-400 font-medium">{t.market.proceduresLabel}</p>
+              <p className="text-sm text-gray-300 mt-1">{t.market.eu}</p>
             </div>
           </div>
 
           {/* Bottom statement */}
           <div className="max-w-2xl">
             <p className="text-2xl md:text-3xl font-bold text-[#0A1C33] leading-snug">
-              Zero fully biodegradable alternatives exist today.
+              {t.market.statement}
             </p>
             <p className="text-gray-400 mt-4 text-lg">
-              Every one of those procedures currently ends with a permanent marker left inside the patient.
+              {t.market.body}
             </p>
           </div>
         </div>

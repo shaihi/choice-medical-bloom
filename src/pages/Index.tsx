@@ -9,9 +9,11 @@ import CTASection from "@/components/CTASection";
 import SupportedBySection from "@/components/SupportedBySection";
 import AccessibilityButton from "@/components/AccessibilityButton";
 import CookieConsent from "@/components/CookieConsent";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 
 const Index = () => {
   return (
+    <LanguageProvider>
     <div className="min-h-screen">
       <a
         href="#main-content"
@@ -41,6 +43,7 @@ const Index = () => {
       <AccessibilityButton />
       <CookieConsent />
     </div>
+    </LanguageProvider>
   );
 };
 

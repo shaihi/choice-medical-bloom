@@ -1,7 +1,9 @@
 import { useInView } from "@/hooks/use-in-view";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const CTASection = () => {
   const { ref, inView } = useInView();
+  const { t } = useLanguage();
 
   return (
     <section
@@ -19,18 +21,18 @@ const CTASection = () => {
           inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
-        <p className="text-[#1CC5DC] text-xs uppercase tracking-[0.2em] mb-10">Seed Round</p>
+        <p className="text-[#1CC5DC] text-xs uppercase tracking-[0.2em] mb-10">{t.cta.eyebrow}</p>
 
         <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-8">
-          We're building the future
+          {t.cta.heading1}
           <br />
-          of breast care.
+          {t.cta.heading2}
           <br />
-          <span className="text-white/40">Join us.</span>
+          <span className="text-white/40">{t.cta.heading3}</span>
         </h2>
 
         <p className="text-white/50 text-lg md:text-xl max-w-lg mx-auto mb-14 leading-relaxed">
-          If you see the opportunity we see, we'd love to connect. Request our investor deck or reach out directly.
+          {t.cta.body}
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -42,7 +44,7 @@ const CTASection = () => {
             className="bg-[#1CC5DC] hover:bg-[#1CC5DC]/90 text-[#0A1C33] font-bold px-10 py-5 rounded-xl text-lg transition-all hover:scale-105 focus:ring-2 focus:ring-[#1CC5DC] focus:ring-offset-2 focus:ring-offset-[#0A1C33] shadow-2xl shadow-[#1CC5DC]/20"
             aria-label="Request investor deck via email"
           >
-            Request Investor Deck
+            {t.cta.button}
           </button>
           <a
             href="mailto:contactus@choicemedical.health"

@@ -1,4 +1,5 @@
 import { useInView } from "@/hooks/use-in-view";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const LinkedInIcon = () => (
   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -39,14 +40,14 @@ const teamMembers = [
   },
 ];
 
-const advisors = [
+const advisorsBase = [
   {
     name: "Alexander Preker",
     credentials: "MD, PhD",
     role: "Advisor",
     image: "/uploads/bef6d498-ab09-4994-8842-e6e9de726b91.png",
     linkedin: "https://www.publichealth.columbia.edu/profile/alexander-preker-md",
-    bio: "Global health economist. Faculty at Columbia University.",
+    bioKey: "alexander" as const,
   },
   {
     name: "Dr. Julia Arfi Rouche",
@@ -54,7 +55,7 @@ const advisors = [
     role: "Advisor",
     image: "/uploads/julia_arfi_small.jpeg",
     linkedin: "https://www.linkedin.com/in/julia-arfi-rouche-31908219b/",
-    bio: "Senior breast radiologist at Gustave Roussy and private practice. SIFEM board member. Breast cancer screening advocate in France.",
+    bioKey: "julia" as const,
   },
 ];
 
@@ -98,6 +99,11 @@ const MemberCard = ({ name, role, image, linkedin }: MemberCardProps) => (
 const TeamSection = () => {
   const { ref: teamRef, inView: teamInView } = useInView();
   const { ref: advisorRef, inView: advisorInView } = useInView();
+  const { t } = useLanguage();
+  const advisors = advisorsBase.map((a) => ({
+    ...a,
+    bio: t.team.advisorBios[a.bioKey],
+  }));
 
   return (
     <section
@@ -109,11 +115,11 @@ const TeamSection = () => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="mb-20">
-          <p className="text-[#1CC5DC] text-xs uppercase tracking-[0.2em] mb-4">The people</p>
+          <p className="text-[#1CC5DC] text-xs uppercase tracking-[0.2em] mb-4">{t.team.eyebrow}</p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-            Science, medicine,
+            {t.team.heading1}
             <br />
-            and execution — combined.
+            {t.team.heading2}
           </h2>
         </div>
 
@@ -139,7 +145,7 @@ const TeamSection = () => {
             advisorInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="text-white/30 text-xs uppercase tracking-[0.2em] mb-10">Advisors</p>
+          <p className="text-white/30 text-xs uppercase tracking-[0.2em] mb-10">{t.team.advisorsLabel}</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
             {advisors.map((advisor) => (

@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const HeroSection = () => {
   const [visible, setVisible] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const t = setTimeout(() => setVisible(true), 100);
@@ -36,19 +38,19 @@ const HeroSection = () => {
         }`}
       >
         <p className="text-[#1CC5DC] text-sm font-semibold uppercase tracking-[0.2em] mb-10">
-          Choice Medical
+          {t.hero.eyebrow}
         </p>
 
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.05] mb-10">
-          3 million women a year
+          {t.hero.line1}
           <br />
-          <span className="text-[#1CC5DC]">are marked for life.</span>
+          <span className="text-[#1CC5DC]">{t.hero.line2}</span>
           <br />
-          Most don't need to be.
+          {t.hero.line3}
         </h1>
 
         <p className="text-white/50 text-lg md:text-xl max-w-xl mx-auto mb-16">
-          We're changing that.
+          {t.hero.sub}
         </p>
 
         <button
@@ -56,7 +58,7 @@ const HeroSection = () => {
           className="flex flex-col items-center gap-2 mx-auto text-white/40 hover:text-white/70 transition-colors group"
           aria-label="Scroll to learn more"
         >
-          <span className="text-xs uppercase tracking-widest">Scroll</span>
+          <span className="text-xs uppercase tracking-widest">{t.hero.scroll}</span>
           <div className="w-px h-12 bg-gradient-to-b from-white/40 to-transparent group-hover:from-white/70 transition-colors" />
         </button>
       </div>

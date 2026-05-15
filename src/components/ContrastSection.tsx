@@ -1,14 +1,10 @@
 import { useInView } from "@/hooks/use-in-view";
-
-const rows = [
-  { before: "Permanent implant", after: "Fully biodegrades" },
-  { before: "Marked for life", after: "No trace remains" },
-  { before: "MRI interference", after: "Clean imaging, always" },
-  { before: "Patient anxiety", after: "Patient peace of mind" },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ContrastSection = () => {
   const { ref, inView } = useInView();
+  const { t } = useLanguage();
+  const rows = t.contrast.rows;
 
   return (
     <section
@@ -21,21 +17,21 @@ const ContrastSection = () => {
         {/* Header */}
         <div className="mb-16 md:mb-20">
           <p className="text-gray-300 text-xs uppercase tracking-[0.2em] mb-4">
-            The problem with today's markers
+            {t.contrast.eyebrow}
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-[#0A1C33] leading-tight max-w-xl">
-            The standard hasn't changed in 30 years.
+            {t.contrast.heading}
           </h2>
         </div>
 
         {/* Column headers */}
         <div className="grid grid-cols-[1fr_auto_1fr] items-center mb-4 pb-4">
           <p className="text-xs font-semibold uppercase tracking-widest text-gray-300">
-            Conventional marker
+            {t.contrast.colConventional}
           </p>
           <div className="w-16 md:w-24" />
           <p className="text-xs font-semibold uppercase tracking-widest text-[#1CC5DC]">
-            Choice Medical
+            {t.contrast.colChoice}
           </p>
         </div>
 

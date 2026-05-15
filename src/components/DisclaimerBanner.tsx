@@ -1,5 +1,7 @@
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const DisclaimerBanner = () => {
+  const { t } = useLanguage();
   return (
     <div
       id="disclaimer"
@@ -11,12 +13,9 @@ const DisclaimerBanner = () => {
         className="max-w-7xl mx-auto text-white/60"
       >
         <h2 id="disclaimer-title" className="sr-only">
-          FDA investigational-use disclaimer
+          {t.disclaimer.srTitle}
         </h2>
-        <p>
-          Caution — Investigational device. Limited by Federal law to
-          investigational use. Not for sale.
-        </p>
+        <p>{t.disclaimer.text}</p>
       </aside>
     </div>
   );
