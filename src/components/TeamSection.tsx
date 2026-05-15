@@ -16,7 +16,7 @@ const teamMembers = [
   {
     name: "Shai Haim, MBA",
     role: "Co-founder & COO",
-    image: "/uploads/b0e2ffda-8a09-4248-be5c-9112cf7eccda.png",
+    image: "/uploads/shai.png",
     linkedin: "https://linkedin.com/in/shaihi",
   },
   {
