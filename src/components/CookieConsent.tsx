@@ -56,7 +56,7 @@ const CookieConsent = () => {
             </Button>
           </div>
           <p className="text-xs text-gray-500">
-            <a href="#privacy" className="underline hover:text-[#1CC5DC]">
+            <a href="/privacy" className="underline hover:text-[#1CC5DC]">
               Read our Privacy Policy
             </a>
           </p>

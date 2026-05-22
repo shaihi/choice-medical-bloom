@@ -3,10 +3,12 @@ import type { ReactNode } from "react";
 import { translations } from "@/i18n/translations";
 import type { Lang } from "@/i18n/translations";
 
+type Translation = (typeof translations)[Lang];
+
 interface LanguageContextValue {
   lang: Lang;
   setLang: (lang: Lang) => void;
-  t: typeof translations["en"];
+  t: Translation;
 }
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);

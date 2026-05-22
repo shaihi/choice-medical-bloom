@@ -88,8 +88,9 @@ const PrivacyPolicy = () => {
             <h2 className="text-2xl font-semibold mb-4 text-[#0A1C33]">Cookies and Tracking</h2>
             <p className="mb-4">
               Our website uses essential cookies necessary for functionality (such as remembering your preferences). 
-              With your explicit consent, we may load third-party tools (GPTEngineer platform script) that could 
-              collect data according to their own privacy policies.
+              With your explicit consent, we may load analytics tools through Google Tag Manager and Google Analytics 
+              to understand how visitors use the site. We may also load the GPTEngineer platform script used to manage 
+              this website. These third-party tools may collect data according to their own privacy policies.
             </p>
             <p>
               You can manage your cookie preferences through the cookie consent banner. Essential cookies cannot 

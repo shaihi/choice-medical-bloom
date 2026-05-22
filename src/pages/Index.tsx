@@ -8,12 +8,9 @@ import TeamSection from "@/components/TeamSection";
 import CTASection from "@/components/CTASection";
 import SupportedBySection from "@/components/SupportedBySection";
 import AccessibilityButton from "@/components/AccessibilityButton";
-import CookieConsent from "@/components/CookieConsent";
-import { LanguageProvider } from "@/contexts/LanguageContext";
 
 const Index = () => {
   return (
-    <LanguageProvider>
     <div className="min-h-screen">
       <a
         href="#main-content"
@@ -41,9 +38,7 @@ const Index = () => {
       </footer>
 
       <AccessibilityButton />
-      <CookieConsent />
     </div>
-    </LanguageProvider>
   );
 };
 

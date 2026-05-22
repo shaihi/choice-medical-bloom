@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const SupportedBySection = () => {
@@ -25,6 +26,12 @@ const SupportedBySection = () => {
         <p className="text-xs text-gray-700 text-center mt-4 max-w-4xl">
           {t.supported.legal}
         </p>
+        <Link
+          to="/privacy"
+          className="text-xs text-gray-600 underline underline-offset-4 hover:text-[#0A1C33] transition-colors"
+        >
+          {t.supported.privacy}
+        </Link>
       </div>
     </section>
   );

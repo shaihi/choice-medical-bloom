@@ -8,6 +8,8 @@ import Index from "./pages/Index";
 import PrivacyPage from "./pages/PrivacyPage";
 import NotFound from "./pages/NotFound";
 import RouteTracker from "./components/RouteTracker";
+import CookieConsent from "./components/CookieConsent";
+import { LanguageProvider } from "./contexts/LanguageContext";
 import { initGA } from "./lib/analytics";
 
 const queryClient = new QueryClient();
@@ -24,15 +26,18 @@ const App = () => {
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
-          <RouteTracker />
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/privacy" element={<PrivacyPage />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
+        <LanguageProvider>
+          <BrowserRouter>
+            <RouteTracker />
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/privacy" element={<PrivacyPage />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+            <CookieConsent />
+          </BrowserRouter>
+        </LanguageProvider>
       </TooltipProvider>
     </QueryClientProvider>
   );

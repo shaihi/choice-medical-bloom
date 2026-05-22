@@ -74,6 +74,7 @@ export const translations = {
     supported: {
       france2030: "This project was funded by the French government as part of France 2030",
       legal: "The products and solutions described on this website are currently under development and have not been cleared or approved by the U.S. Food and Drug Administration (FDA). They are not available for sale or distribution. The information provided is for informational purposes only and is not intended as a substitute for professional medical advice, diagnosis, or treatment.",
+      privacy: "Privacy Policy",
     },
   },
   fr: {
@@ -149,6 +150,7 @@ export const translations = {
     supported: {
       france2030: "Ce projet a été financé par l'État dans le cadre de France 2030",
       legal: "Les produits et solutions décrits sur ce site sont actuellement en cours de développement et n'ont pas été autorisés ou approuvés par la Food and Drug Administration (FDA) des États-Unis. Ils ne sont pas disponibles à la vente ou à la distribution. Les informations fournies sont à titre informatif uniquement et ne constituent pas un substitut aux conseils médicaux professionnels, au diagnostic ou au traitement.",
+      privacy: "Politique de confidentialité",
     },
   },
 } as const;
