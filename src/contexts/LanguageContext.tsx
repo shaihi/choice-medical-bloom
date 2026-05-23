@@ -13,9 +13,38 @@ interface LanguageContextValue {
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
-export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [lang, setLang] = useState<Lang>("en");
+const isLang = (value: string | null): value is Lang => value === "en" || value === "fr";
+
+const getStoredLang = (): Lang => {
+  if (typeof window === "undefined") return "en";
+
+  try {
+    const storedLang = window.localStorage.getItem("site-language");
+    return isLang(storedLang) ? storedLang : "en";
+  } catch {
+    return "en";
+  }
+};
+
+export const LanguageProvider = ({
+  children,
+  initialLang,
+}: {
+  children: ReactNode;
+  initialLang?: Lang;
+}) => {
+  const [lang, setLangState] = useState<Lang>(() => initialLang ?? getStoredLang());
   const t = translations[lang];
+  const setLang = (nextLang: Lang) => {
+    setLangState(nextLang);
+
+    try {
+      window.localStorage.setItem("site-language", nextLang);
+    } catch {
+      // Language still changes for the current session if storage is unavailable.
+    }
+  };
+
   return (
     <LanguageContext.Provider value={{ lang, setLang, t }}>
       {children}
